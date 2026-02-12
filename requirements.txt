@@ -1,4 +1,4 @@
-gradio
+streamlit
 pdf2image
 python-pptx
 Pillow
