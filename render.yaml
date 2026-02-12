@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: pdf-to-pptx-tool
+    env: docker
+    plan: free
+    branch: main
+    region: oregon  # or 'frankfurt', 'ohio', etc.
+    
+    # This tells Render to look for the Dockerfile in the current directory
+    dockerContext: .
+    dockerfilePath: Dockerfile
+
+    # Environment variables (Optional)
+    envVars:
+      - key: PORT
+        value: 7860
